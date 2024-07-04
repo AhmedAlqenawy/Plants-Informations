@@ -1,0 +1,52 @@
+# Flutter specific
+.DS_Store
+.dart_tool/
+.build/
+.idea/
+.packages
+.pub/
+*.lock
+*.log
+*.log.*
+
+# Flutter/Dart/Pub related
+.flutter-plugins
+.flutter-plugins-dependencies
+.flutter-version
+**/ios/Flutter/.last_build_id
+**/.android/
+**/ios/.symlinks/
+**/ios/Pods/
+**/android/.gradle/
+**/android/app/build/
+**/build/
+**/out/
+**/coverage/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+.cache
+project.iml
+misc.xml
+modules.xml
+workspace.xml
+tasks.xml
+
+# VS Code related
+.vscode/
+
+# Mac specific
+.DS_Store
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+
+# Linux specific
+*~
+
+# Fuchsia related
+.fuchsia/
