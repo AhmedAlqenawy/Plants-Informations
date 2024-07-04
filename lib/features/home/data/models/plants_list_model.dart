@@ -1,4 +1,4 @@
-import 'package:plants_informations/features/home/data/models/plant_model.dart';
+import 'package:plants_information/features/home/data/models/plant_model.dart';
 
 import '../../domain/entities/plants_list_entity.dart';
 import 'meta_model.dart';

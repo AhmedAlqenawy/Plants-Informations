@@ -1,4 +1,4 @@
-import 'package:plants_informations/features/home/domain/entities/meta_entity.dart';
+import 'package:plants_information/features/home/domain/entities/meta_entity.dart';
 
 class MetaModel extends MetaEntity {
   const MetaModel(

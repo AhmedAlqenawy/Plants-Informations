@@ -1,6 +1,6 @@
 import 'package:go_router/go_router.dart';
-import 'package:plants_informations/features/home/presentation/pages/home_page.dart';
-import 'package:plants_informations/features/plant_details/presentation/pages/plant_details_page.dart';
+import 'package:plants_information/features/home/presentation/pages/home_page.dart';
+import 'package:plants_information/features/plant_details/presentation/pages/plant_details_page.dart';
 
 import '../../features/home/domain/entities/plant_entity.dart';
 

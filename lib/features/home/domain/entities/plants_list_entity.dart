@@ -1,6 +1,6 @@
 import 'package:equatable/equatable.dart';
-import 'package:plants_informations/features/home/domain/entities/meta_entity.dart';
-import 'package:plants_informations/features/home/domain/entities/plant_entity.dart';
+import 'package:plants_information/features/home/domain/entities/meta_entity.dart';
+import 'package:plants_information/features/home/domain/entities/plant_entity.dart';
 
 class PlantsListEntity extends Equatable {
   final List<PlantEntity>? data;

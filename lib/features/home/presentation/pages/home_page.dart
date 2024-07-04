@@ -3,10 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:plants_informations/features/home/domain/entities/plants_list_entity.dart';
-import 'package:plants_informations/features/home/presentation/bloc/plants_cubit.dart';
-import 'package:plants_informations/utile/constants/route_keys.dart';
-import 'package:plants_informations/utile/extensions/num_converts.dart';
+import 'package:plants_information/features/home/domain/entities/plants_list_entity.dart';
+import 'package:plants_information/features/home/presentation/bloc/plants_cubit.dart';
+import 'package:plants_information/utile/constants/route_keys.dart';
+import 'package:plants_information/utile/extensions/num_converts.dart';
 
 import '../widgets/plant_widget.dart';
 import '../widgets/zone_widget.dart';

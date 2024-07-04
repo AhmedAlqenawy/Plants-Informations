@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
-import 'package:plants_informations/utile/extensions/num_converts.dart';
+import 'package:plants_information/utile/extensions/num_converts.dart';
 
 import '../../../home/domain/entities/plant_entity.dart';
 import '../widgets/details_widget.dart';

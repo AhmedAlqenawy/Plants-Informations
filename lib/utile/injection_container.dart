@@ -1,6 +1,6 @@
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
-import 'package:plants_informations/features/home/data/data_sources/plants_remote_data_source.dart';
+import 'package:plants_information/features/home/data/data_sources/plants_remote_data_source.dart';
 
 import '../core/network/network_info.dart';
 import '../features/home/data/data_sources/plants_data_source.dart';

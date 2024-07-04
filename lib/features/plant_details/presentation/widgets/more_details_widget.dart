@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:plants_informations/utile/extensions/double_convert.dart';
+import 'package:plants_information/utile/extensions/double_convert.dart';
 
 import '../../../../utile/services/launchInWebViewOrVC.dart';
 

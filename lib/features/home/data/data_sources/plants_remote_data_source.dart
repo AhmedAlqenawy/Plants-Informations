@@ -2,8 +2,8 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
-import 'package:plants_informations/features/home/data/data_sources/plants_data_source.dart';
-import 'package:plants_informations/features/home/data/models/plants_list_model.dart';
+import 'package:plants_information/features/home/data/data_sources/plants_data_source.dart';
+import 'package:plants_information/features/home/data/models/plants_list_model.dart';
 
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/network/remote/dio_helper.dart';

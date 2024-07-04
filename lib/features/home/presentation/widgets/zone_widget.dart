@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:plants_informations/utile/fonts/fonts.dart';
+import 'package:plants_information/utile/fonts/fonts.dart';
 
 import '../../data/data_sources/plants_remote_data_source.dart';
 
