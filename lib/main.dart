@@ -4,12 +4,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:plants_information/features/home/presentation/bloc/plants_cubit.dart';
+import 'package:plants_information/features/plants/presentation/bloc/plants_cubit.dart';
 import 'package:plants_information/utile/constants/route_keys.dart';
 import 'package:plants_information/utile/constants/themes/light_theme.dart';
 
 import 'core/network/local/cache_helper.dart';
 import 'core/network/remote/dio_helper.dart';
+import 'features/zone/presentation/bloc/zones_cubit.dart';
 import 'utile/injection_container.dart' as di;
 
 void main() async {
@@ -35,7 +36,7 @@ class _MyAppState extends State<MyApp> {
     return MultiBlocProvider(
       providers: [
         BlocProvider(create: (_) => di.sl<PlantsCubit>()),
-
+        BlocProvider(create: (_) => di.sl<ZonesCubit>()),
       ],
       child: MaterialApp(
         debugShowCheckedModeBanner: false,

@@ -17,12 +17,13 @@ class DioHelper {
 
   static Future<Response> getData({
     required String url,
-    Map<String, dynamic>? query,
+    String? parameters,
     String lang = 'en',
   }) async {
 
+
     return await dio.get(
-      "$baseUrl$url?token=$token",
+      "$baseUrl$url?token=$token&$parameters",
     );
   }
 
