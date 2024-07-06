@@ -16,15 +16,14 @@ class PlantsRemoteDataSourceHttpImp extends PlantsDataSource {
 
   @override
   Future<PlantsListModel> getAllPlants(int pageIndex, String zoneId) async {
-    String par = "page=$pageIndex";
+    String parameter = "page=$pageIndex";
     if (zoneId != "") {
-      par += "&zone_id=$zoneId";
+      parameter += "&zone_id=$zoneId";
     }
 
     try {
-      final http.Response response =
-          await httpClient.get(Uri.parse("https://mocki.io/v1/77087eb2-937c-4990-9c0f-075b5d369740"));
-         // await httpClient.get(Uri.parse("${baseUrl}plants?token=$token&$par"));
+      final http.Response response = await httpClient
+          .get(Uri.parse("${baseUrl}plants?token=$token&$parameter"));
 
       if (kDebugMode) {
         print(response.request?.url);
