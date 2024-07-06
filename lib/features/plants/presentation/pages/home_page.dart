@@ -27,7 +27,6 @@ class HomePage extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           16.toHeight,
-
           const ZonesPage(),
           8.toHeight,
           BlocConsumer<PlantsCubit, PlantsState>(
@@ -43,7 +42,9 @@ class HomePage extends StatelessWidget {
               }
               return LazyLoadScrollView(
                 onEndOfPage: (){
-                  cubit.getMorePlants();
+                  if (state is LoadingMorePlantsState == false) {
+                    cubit.getMorePlants();
+                  }
                 },
                 child: Expanded(
                   child: RefreshIndicator(

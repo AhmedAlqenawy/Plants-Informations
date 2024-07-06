@@ -1,7 +1,12 @@
+import 'dart:convert';
+
 import 'package:plants_information/features/plants/data/models/plant_model.dart';
 
 import '../../domain/entities/plants_list_entity.dart';
 import 'meta_model.dart';
+
+PlantsListModel zonesListFromJson(String str) => PlantsListModel.fromJson(json.decode(str));
+
 
 class PlantsListModel extends PlantsListEntity {
   const PlantsListModel(

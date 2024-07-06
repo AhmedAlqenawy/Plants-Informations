@@ -2,6 +2,7 @@ import 'dart:async';
 import 'dart:io';
 
 import 'package:dio/dio.dart';
+import 'package:flutter/foundation.dart';
 import 'package:plants_information/features/plants/data/data_sources/plants_data_source.dart';
 import 'package:plants_information/features/plants/data/models/plants_list_model.dart';
 
@@ -23,6 +24,9 @@ class PlantsRemoteDataSourceImp extends PlantsDataSource {
       Response response =
           await DioHelper.getData(url: "plants", parameters: par);
 
+      if (kDebugMode) {
+        print(response.requestOptions.uri);
+      }
       if (response.statusCode == 200) {
         PlantsListModel plantsListModel =
             PlantsListModel.fromJson((response.data));
