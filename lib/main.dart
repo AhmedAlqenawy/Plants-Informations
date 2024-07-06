@@ -8,7 +8,6 @@ import 'package:plants_information/features/plants/presentation/bloc/plants_cubi
 import 'package:plants_information/utile/constants/route_keys.dart';
 import 'package:plants_information/utile/constants/themes/light_theme.dart';
 
-import 'core/network/local/cache_helper.dart';
 import 'core/network/remote/dio_helper.dart';
 import 'features/zone/presentation/bloc/zones_cubit.dart';
 import 'utile/injection_container.dart' as di;
@@ -16,7 +15,6 @@ import 'utile/injection_container.dart' as di;
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await di.init();
-  await CacheHelper.init();
   await DioHelper.init();
   HttpOverrides.global = MyHttpOverrides();
 

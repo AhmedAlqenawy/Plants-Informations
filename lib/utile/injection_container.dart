@@ -1,9 +1,9 @@
 import 'package:get_it/get_it.dart';
 import 'package:internet_connection_checker/internet_connection_checker.dart';
-import 'package:plants_information/features/plants/data/data_sources/plants_remote_data_source.dart';
 
 import '../core/network/network_info.dart';
 import '../features/plants/data/data_sources/plants_data_source.dart';
+import '../features/plants/data/data_sources/plants_remote_dio.dart';
 import '../features/plants/data/repositories/plants_repository_imp.dart';
 import '../features/plants/domain/repositories/plants_repository.dart';
 import '../features/plants/domain/use_cases/get_plants_list_use_case.dart';
@@ -31,7 +31,8 @@ Future<void> init() async {
       () => PlantsRepositoryImp(dataSource: sl()));
 
   //DataSources
-  sl.registerLazySingleton<PlantsDataSource>(() => PlantsRemoteDataSourceImp());
+  sl.registerLazySingleton<PlantsDataSource>(
+      () => PlantsRemoteDataSourceDioImp());
 
   /// Features - Zones
   // Bloc

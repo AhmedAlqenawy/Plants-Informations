@@ -1,4 +1,8 @@
+import 'dart:convert';
+
 import 'package:plants_information/features/plants/domain/entities/plant_entity.dart';
+
+PlantModel plantsFromJson(String str) => PlantModel.fromJson(json.decode(str));
 
 class PlantModel extends PlantEntity {
   const PlantModel(

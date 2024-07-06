@@ -18,7 +18,6 @@ class DioHelper {
   static Future<Response> getData({
     required String url,
     String? parameters,
-    String lang = 'en',
   }) async {
 
 

@@ -9,12 +9,11 @@ import 'package:plants_information/features/plants/data/models/plants_list_model
 import '../../../../core/error/exceptions.dart';
 import '../../../../core/network/remote/dio_helper.dart';
 
-class PlantsRemoteDataSourceImp extends PlantsDataSource {
-  PlantsRemoteDataSourceImp();
+class PlantsRemoteDataSourceDioImp extends PlantsDataSource {
+  PlantsRemoteDataSourceDioImp();
 
   @override
   Future<PlantsListModel> getAllPlants(int pageIndex, String zoneId) async {
-    await Future.delayed(const Duration(milliseconds: 500), () {});
 
     String par = "page=$pageIndex";
     if (zoneId != "") {

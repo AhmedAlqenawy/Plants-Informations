@@ -18,7 +18,7 @@ void main() {
         GetPlantsListUseCase(plantsRepository: mockPlantsRepository);
   });
   PlantsListEntity plantsListEntity =
-      zonesListFromJson(readJson("helpers/dummy_data/plants_list.json"))
+      plantsListFromJson(readJson("helpers/dummy_data/plants_list.json"))
           .toEntity();
 
   test('should return plants list', () async {
